@@ -10,8 +10,9 @@
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/fundo"
         app:srcCompat="@drawable/fundo" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -61,7 +62,7 @@
         android:layout_width="109dp"
         android:layout_height="137dp"
         android:layout_marginTop="104dp"
-        android:src="@tools:sample/avatars"
+        android:src="@drawable/scp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
