@@ -1,4 +1,5 @@
-import android.R
+package com.example.projeto
+
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
