@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Login::class.java))
             finish()
 
-        }, 1500)
+        }, 1000)
     }
 }
 
