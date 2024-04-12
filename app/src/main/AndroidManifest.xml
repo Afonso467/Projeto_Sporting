@@ -25,6 +25,9 @@
             android:exported="true" />
         <activity android:name=".Login"
             android:exported="true"/>
+        <activity android:name=".BemVindo"
+            android:exported="true"/>
+
     </application>
 
 </manifest>
