@@ -9,8 +9,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
         android:src="@drawable/login"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
@@ -51,7 +53,9 @@
         android:textSize="19dp"
         android:textColor="@android:color/white"
         tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="430dp" />
+        tools:layout_editor_absoluteY="430dp"
+        tools:ignore="MissingConstraints" />
+
 
     <android.widget.Button
         android:id="@+id/button"
@@ -63,7 +67,8 @@
         android:padding="16dp"
         android:layout_margin="16dp"
         tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="501dp" />
+        tools:layout_editor_absoluteY="501dp"
+        tools:ignore="MissingConstraints" />
 
     <android.widget.Button
         android:id="@+id/button2"

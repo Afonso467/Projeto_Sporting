@@ -1,22 +1,25 @@
 package com.example.projeto
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
-import android.widget.ImageView
+import android.os.Handler
+import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Encontra as ImageView
-        val imageView3 = findViewById<ImageView>(R.id.imageView3)
-        val imageView4 = findViewById<ImageView>(R.id.imageView4)
+        // Cria um novo Handler associado ao Looper principal
+        val handler = Handler(Looper.getMainLooper())
 
-        // Define as imagens
-        imageView3.setImageResource(R.drawable.fundo)
-        imageView4.setImageResource(R.drawable.scp)
+        // Posta uma tarefa com atraso no Handler
+        handler.postDelayed({
+            // Adicione aqui o que deseja fazer após o atraso
+        }, 1500) // Atraso de 1,5 segundos (1500 milissegundos)
     }
 }
 
-}
+
