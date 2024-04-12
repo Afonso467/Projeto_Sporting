@@ -23,12 +23,13 @@
         android:textSize="35dp"
         android:textStyle="bold"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintVertical_bias="0.46" />
+
 
     <TextView
         android:id="@+id/textView5"
@@ -42,19 +43,23 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="294dp"
         android:layout_height="58dp"
-        android:text="Liga-te ao universo Sportinguista e vive uma nova experiência digital "
+        android:text="Liga-te ao universo Sportinguista e vive uma nova experiência digital"
         android:textAlignment="center"
         android:textSize="19dp"
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="430dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="430dp" />
+
 
 
     <android.widget.Button
@@ -65,10 +70,12 @@
         android:textColor="@android:color/white"
         android:background="@drawable/bordas_redondas"
         android:padding="16dp"
-        android:layout_margin="16dp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="501dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="501dp" />
+
+
 
     <android.widget.Button
         android:id="@+id/button2"
@@ -78,8 +85,11 @@
         android:textColor="@android:color/white"
         android:background="@drawable/bordas_redondas"
         android:padding="16dp"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="501dp" />
+
 
 
 
@@ -91,7 +101,10 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@android:color/transparent"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="600dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="600dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
