@@ -9,9 +9,11 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
         android:src="@drawable/login"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="-3dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -49,7 +51,8 @@
         android:textAlignment="center"
         android:textSize="19dp"
         tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="403dp" />
+        tools:layout_editor_absoluteY="403dp"
+        tools:ignore="MissingConstraints" />
 
     <android.widget.Button
         android:id="@+id/button"
@@ -57,7 +60,8 @@
         android:layout_height="wrap_content"
         android:text="Criar Conta"
         tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="501dp" />
+        tools:layout_editor_absoluteY="501dp"
+        tools:ignore="MissingConstraints" />
 
     <android.widget.Button
         android:id="@+id/button2"

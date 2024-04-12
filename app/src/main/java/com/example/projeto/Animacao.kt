@@ -1,23 +1,21 @@
 package com.example.projeto
 
+
+import android.content.Intent
 import android.os.Bundle
-import android.view.animation.AnimationUtils
-import android.widget.ImageView
+import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash_screen)
 
-        // Carrega a animação de entrada
-        val fadeScaleInAnimation =
-            AnimationUtils.loadAnimation(this, R.anim.fade_scale_in_animation)
-
-        // Encontra a ImageView do logotipo do Sporting
-        val imageViewSportingLogo = findViewById<ImageView>(R.id.imageViewSportingLogo)
-
-        // Aplica a animação à ImageView
-        imageViewSportingLogo.startAnimation(fadeScaleInAnimation)
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }, 4000)
     }
 }
