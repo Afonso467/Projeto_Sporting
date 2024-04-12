@@ -89,7 +89,6 @@
         android:layout_height="wrap_content"
         android:text="Continuar sem Conta SCP"
         android:textStyle="bold"
-
         android:textColor="@android:color/white"
         android:background="@android:color/transparent"
         tools:layout_editor_absoluteX="100dp"

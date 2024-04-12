@@ -20,7 +20,7 @@
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:transitionEasing="cubic(0,2,0,2,0,8,0,8)"
+            motion:transitionEasing="cubic(0,0,1,1)"
             android:scaleX="10"
             android:scaleY="10" />
         <Constraint
