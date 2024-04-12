@@ -6,38 +6,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/splash_screen_scene"
-    tools:context=".SplashScreenActivity">
+    tools:context=".SplashScreenActivity"
+    android:background="@drawable/fundo">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/backgroundLayout"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/bg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="60dp" />
 
     <ImageView
         android:id="@+id/sportinglogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/scp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/scp" />
 
     <ImageView
         android:id="@+id/sportinglogowhite"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/scp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/white" />
+        app:tint="@color/white"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="560dp" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
