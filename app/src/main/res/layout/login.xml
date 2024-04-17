@@ -66,7 +66,7 @@
 
 
     <android.widget.Button
-        android:id="@+id/button"
+        android:id="@+id/criar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Criar Conta"
@@ -81,7 +81,7 @@
 
 
     <android.widget.Button
-        android:id="@+id/button2"
+        android:id="@+id/iniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Iniciar Sessão"
