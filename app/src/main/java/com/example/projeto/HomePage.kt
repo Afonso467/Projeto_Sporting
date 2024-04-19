@@ -22,9 +22,7 @@ class HomePage : AppCompatActivity() {
         // Configurando notícias (apenas exemplo, você precisará substituir por suas próprias notícias)
         val newsList = listOf(
             News("Título da Notícia 1", "Conteúdo da Notícia 1"),
-            News("Título da Notícia 2", "Conteúdo da Notícia 2"),
-            News("Título da Notícia 3", "Conteúdo da Notícia 3"),
-            News("Título da Notícia 4", "Conteúdo da Notícia 4")
+            News("Título da Notícia 2", "Conteúdo da Notícia 2")
         )
 
         val linearLayout = findViewById<LinearLayout>(R.id.LinearLayoutNews)
