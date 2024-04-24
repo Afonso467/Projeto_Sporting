@@ -19,7 +19,7 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
         val buttoncriar = findViewById<Button>(R.id.criar)
-        button.setOnClickListener {
+        buttoncriar.setOnClickListener {
 
                 val intent = Intent(this, Criar::class.java)
             startActivity(intent)
