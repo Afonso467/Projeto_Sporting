@@ -34,7 +34,6 @@ class BemVindo: AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
-            // Iniciar a atividade de login
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
