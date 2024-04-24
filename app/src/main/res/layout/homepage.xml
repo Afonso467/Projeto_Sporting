@@ -4,26 +4,123 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+    <!-- Banner Principal -->
+    <ImageView
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/scp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
 
-
-    <ScrollView
+    <!-- Menu de Navegação -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/navigationRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="none" />
 
-        <LinearLayout
-            android:id="@+id/LinearLayoutNews"
-            android:layout_width="match_parent"
+    <!-- Destaques e Notícias -->
+    <TextView
+        android:id="@+id/highlightsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="highlights_title"
+        android:textSize="20sp"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/highlightsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Calendário de Jogos -->
+    <TextView
+        android:id="@+id/gamesCalendarTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="games_calendar_title"
+        android:textSize="20sp"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gamesCalendarRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Resultados Recentes -->
+    <TextView
+        android:id="@+id/recentResultsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recent_results_title"
+        android:textSize="20sp"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentResultsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Elenco e Perfil dos Jogadores -->
+    <TextView
+        android:id="@+id/playersTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="players_title"
+        android:textSize="20sp"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Loja Oficial -->
+    <Button
+        android:id="@+id/shopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="shop_button_text" />
+
+    <!-- Redes Sociais -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/facebookIcon"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:src="@drawable/facebook_icon"
+            android:layout_margin="8dp"/>
 
+        <ImageView
+            android:id="@+id/twitterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scp"
+            android:layout_margin="8dp"/>
 
+        <ImageView
+            android:id="@+id/instagramIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scp"
+            android:layout_margin="8dp"/>
 
-        </LinearLayout>
-    </ScrollView>
+        <!-- Adicione mais ícones de redes sociais conforme necessário -->
+
+    </LinearLayout>
+
+    <!-- Configurações -->
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="settings_button_text" />
 
 </LinearLayout>
