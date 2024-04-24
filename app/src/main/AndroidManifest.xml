@@ -30,6 +30,8 @@
             android:exported="true"/>
         <activity android:name=".HomePage"
             android:exported="true"/>
+        <activity android:name=".Criar"
+            android:exported="true"/>
 
     </application>
 
