@@ -28,6 +28,8 @@
             android:exported="true"/>
         <activity android:name=".BemVindo"
             android:exported="true"/>
+        <activity android:name=".HomePage"
+            android:exported="true"/>
 
     </application>
 
