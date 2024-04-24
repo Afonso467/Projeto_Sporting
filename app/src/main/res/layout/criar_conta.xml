@@ -10,13 +10,45 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="350dp"
             android:layout_height="350dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="30dp"
-            android:background="@drawable/camisola" />
+             />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="280dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="280dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+             />
+
+        <TextView
+            android:id="@+id/alcunha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="-290dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,6 +141,7 @@
                 android:textColor="@color/black"/>
 
             <EditText
+                android:id="@+id/escreveralcunha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Escreva o seu nome"
