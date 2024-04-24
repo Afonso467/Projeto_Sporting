@@ -13,13 +13,6 @@
         android:scaleType="centerCrop"
         android:adjustViewBounds="true" />
 
-    <!-- Menu de Navegação -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/navigationRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:scrollbars="none" />
 
     <!-- Destaques e Notícias -->
     <TextView
@@ -35,86 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <!-- Calendário de Jogos -->
-    <TextView
-        android:id="@+id/gamesCalendarTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="games_calendar_title"
-        android:textSize="20sp"
-        android:padding="16dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/gamesCalendarRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!-- Resultados Recentes -->
-    <TextView
-        android:id="@+id/recentResultsTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="recent_results_title"
-        android:textSize="20sp"
-        android:padding="16dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recentResultsRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!-- Elenco e Perfil dos Jogadores -->
-    <TextView
-        android:id="@+id/playersTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="players_title"
-        android:textSize="20sp"
-        android:padding="16dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/playersRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!-- Loja Oficial -->
-    <Button
-        android:id="@+id/shopButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="shop_button_text" />
-
-    <!-- Redes Sociais -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/facebookIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/facebook_icon"
-            android:layout_margin="8dp"/>
-
-        <ImageView
-            android:id="@+id/twitterIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/scp"
-            android:layout_margin="8dp"/>
-
-        <ImageView
-            android:id="@+id/instagramIcon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/scp"
-            android:layout_margin="8dp"/>
-
-        <!-- Adicione mais ícones de redes sociais conforme necessário -->
-
-    </LinearLayout>
 
     <!-- Configurações -->
     <Button
