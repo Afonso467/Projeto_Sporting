@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <!-- Adicione suas opções de menu aqui -->
+        <Button
+            android:id="@+id/option_1_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 1" />
+
+        <Button
+            android:id="@+id/option_2_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opção 2" />
+
+        <!-- Adicione mais opções conforme necessário -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
