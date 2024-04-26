@@ -9,11 +9,12 @@ import android.view.View
 import android.widget.PopupMenu
 import android.widget.Toast
 import android.widget.ImageButton
+import android.app.Dialog
+import android.view.ViewGroup
+import android.view.Window
 
 
 class BemVindo: AppCompatActivity() {
-
-
 
     private lateinit var btnOpenPopup: ImageButton
     private var isMenuIcon = true
@@ -23,12 +24,12 @@ class BemVindo: AppCompatActivity() {
         setContentView(R.layout.bem_vindo)
 
         btnOpenPopup = findViewById(R.id.btn_open_popup)
-
-        btnOpenPopup.setOnClickListener { view ->
+        btnOpenPopup.setOnClickListener {
             if (isMenuIcon) {
-                showPopupMenu(view as ImageButton)
+                showPopupMenu()
+                toggleIcon()
             } else {
-                toggleIcon(btnOpenPopup)
+                toggleIcon()
             }
         }
 
@@ -40,39 +41,47 @@ class BemVindo: AppCompatActivity() {
         }
     }
 
-    private fun showPopupMenu(view: ImageButton) {
-        val popupMenu = PopupMenu(this, view)
-        popupMenu.inflate(R.menu.popup_menu)
-        popupMenu.setOnMenuItemClickListener { item: MenuItem? ->
-            when (item?.itemId) {
-                R.id.menu_option_1 -> {
-                    // Adicione o código para a ação da opção 1 aqui
-                    true
-                }
-                R.id.menu_option_2 -> {
-                    // Adicione o código para a ação da opção 2 aqui
-                    true
-                }
-                else -> false
-            }
-        }
-        popupMenu.setOnDismissListener {
-            toggleIcon(view)
-        }
-        popupMenu.show()
+    private fun showPopupMenu() {
+        // Implemente o código do PopupMenu aqui
     }
 
-    private fun toggleIcon(imageButton: ImageButton) {
+    private fun toggleIcon() {
+        isMenuIcon = !isMenuIcon
         if (isMenuIcon) {
-            // Alterna para o ícone "X"
-            imageButton.setImageResource(R.drawable.ic_menu)
+            btnOpenPopup.setImageResource(R.drawable.ic_menu)
         } else {
-            // Alterna para o ícone de menu
-            imageButton.setImageResource(R.drawable.ic_close)
+            btnOpenPopup.setImageResource(R.drawable.ic_close)
+        }
+    }
+
+    fun showFullScreenMenu(view: View) {
+        val dialog = Dialog(this)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(true)
+        dialog.setContentView(R.layout.full_screen_menu)
+
+        // Configurar opções de menu
+        val option1Button = dialog.findViewById<Button>(R.id.option_1_button)
+        option1Button.setOnClickListener {
+            // Adicione a ação para a opção 1 aqui
+            dialog.dismiss() // Fechar o diálogo após a seleção da opção
         }
 
-        // Inverte o estado do ícone
-        isMenuIcon = !isMenuIcon
+        val option2Button = dialog.findViewById<Button>(R.id.option_2_button)
+        option2Button.setOnClickListener {
+            // Adicione a ação para a opção 2 aqui
+            dialog.dismiss() // Fechar o diálogo após a seleção da opção
+        }
+
+        // Adicione mais opções conforme necessário
+
+        // Configurar largura e altura do diálogo
+        dialog.window?.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
+
+        // Exibir o diálogo apenas se a atividade ainda estiver ativa
+        if (!isFinishing) {
+            dialog.show()
+        }
     }
 }
 
