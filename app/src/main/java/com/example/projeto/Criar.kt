@@ -1,8 +1,10 @@
 package com.example.projeto
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.EditText
 import android.widget.ImageButton
@@ -14,6 +16,12 @@ class Criar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.criar_conta)
 
+        val button2 = findViewById<Button>(R.id.seguinte)
+        button2.setOnClickListener {
+            val intent = Intent(this, CriarConta::class.java)
+            startActivity(intent)
+        }
+
         val imageButton = findViewById<ImageButton>(R.id.imageButton)
         val imageButton1 = findViewById<ImageButton>(R.id.imageButton1)
         val imageButton2 = findViewById<ImageButton>(R.id.imageButton2)
@@ -22,17 +30,17 @@ class Criar : AppCompatActivity() {
 
         imageButton.setOnClickListener {
             // Trocar a imagem do ImageView para a imagem correspondente ao clicar no imageButton
-            imageView.setImageResource(R.drawable.camisola1costas)
+            imageView.setImageResource(R.drawable.camisola1costass)
         }
 
         imageButton1.setOnClickListener {
             // Trocar a imagem do ImageView para a imagem correspondente ao clicar no imageButton1
-            imageView.setImageResource(R.drawable.camisola)
+            imageView.setImageResource(R.drawable.camisola2costas)
         }
 
         imageButton2.setOnClickListener {
             // Trocar a imagem do ImageView para a imagem correspondente ao clicar no imageButton2
-            imageView.setImageResource(R.drawable.camisola3costas)
+            imageView.setImageResource(R.drawable.camisola3costass)
         }
 
         val alcunhaEditText = findViewById<EditText>(R.id.escreveralcunha)
