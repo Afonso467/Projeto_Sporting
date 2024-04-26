@@ -4,26 +4,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+    <!-- Banner Principal -->
+    <ImageView
+        android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="wrap_content"
+        android:src="@drawable/scp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
 
 
-    <ScrollView
+    <!-- Destaques e Notícias -->
+    <TextView
+        android:id="@+id/highlightsTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="highlights_title"
+        android:textSize="20sp"
+        android:padding="16dp" />
 
-        <LinearLayout
-            android:id="@+id/LinearLayoutNews"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/highlightsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
-
-        </LinearLayout>
-    </ScrollView>
+    <!-- Configurações -->
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="settings_button_text" />
 
 </LinearLayout>

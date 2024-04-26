@@ -60,9 +60,9 @@
         android:background="?attr/selectableItemBackground"
         android:contentDescription="Abrir Pop-up Menu"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="16dp"
-        android:adjustViewBounds="true"
-        android:onClick="showFullScreenMenu"/>
+        android:layout_marginEnd="16dp"/>
+
+
 
 
 
